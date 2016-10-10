@@ -215,7 +215,6 @@
 
         <span id = "funcParam1">参数一：</span><br>
             <input id="amount1" style="IME-MODE: disabled;" onkeyup="value=value.replace(/[^\-?\d.]/g,'')"   name="amount" type="text" />
-
         <br><span id = "funcParam2">参数二：</span><br>
             <input id="amount2" style="IME-MODE: disabled;" onkeyup="value=value.replace(/[^\-?\d.]/g,'')"   name="amount" type="text" />
         <br><span id = "funcParam3">参数三：</span><br>
@@ -225,7 +224,7 @@
         <br><span id = "funcParam5">参数五：</span><br>
             <input id="amount5" style="IME-MODE: disabled;" onkeyup="value=value.replace(/[^\-?\d.]/g,'')"   name="amount" type="text" />
         <br>
-        <span>输出结果：</span><input type="text" id = "functionRusult" name="numScreen2" class="screen2" value="0" onfocus="this.blur();" />
+        <button onclick="specialCalculat()"  type="button">计算并输出结果</button> <input type="text" id = "functionRusult" name="numScreen2" class="screen2" value="0" onfocus="this.blur();" />
 
 
     </div>
