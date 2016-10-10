@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -152,9 +152,10 @@
     <!--<button onclick="mycalculator(1)">资金成本计算</button>-->
 
     <h4>功能一：资金成本计算</h4>
-    <button onclick="mycalculator(1)">权益成本_DGM法</button>
-    <button onclick="mycalculator(2)">权益成本_CAPM法</button>
-    <button onclick="mycalculator(3)">债券成本_不可赎</button>
+    <button onclick="mycalculator(1)">权益成本-DGM法</button>
+    <button onclick="mycalculator(2)">权益成本-CAPM法</button>
+    <button onclick="mycalculator(3)">债券成本-不可赎回债券</button>
+    <button onclick="mycalculator(10)">债券成本-可赎回债券</button>
     <h4>功能二：资产估值</h4>
     <button onclick="mycalculator(4)">Asset Valuation</button>
     <button onclick="mycalculator(5)">DCF-现金流折现法</button>
@@ -162,8 +163,8 @@
 
     <h4>功能三：外汇风险管理</h4>
     <button onclick="mycalculator(7)">远期汇率合约</button>
-    <button onclick="mycalculator(8)">未来收钱</button>
-    <button onclick="mycalculator(9)">未来支付</button>
+    <button onclick="mycalculator(8)">货币市场对冲-未来现金流流入</button>
+    <button onclick="mycalculator(9)">货币市场对冲-未来现金流流入</button>
 
 
 </div>
@@ -207,24 +208,25 @@
         <!--<button onclick="mycalculator(1)">资金成本计算</button>-->
 
 
-        <h3 align=left>方法的介绍:</h3>
+        <h3 align=left>财务管理计算器:</h3>
         <p id = "funcIntroduce" align=left name="MSG" cols=40 rows=4>
-功能的介绍：功能的介绍功能的介绍功能的介绍功能的介绍功能的介绍功能的介绍功能的介绍功能的介绍功能的介绍功能的介绍
+功能的介绍：该计算器融合了财务管理三大板块:资金成本,资产估值以及外汇风险管理,省去了繁杂的计算,为财务管理人员提供了极大的便利,
+使用方法如下:
 </p>
         <!--<button onclick="mycalculator(1)">权益成本_DGM法</button>-->
 
-        <span id = "funcParam1">参数一：</span><br>
+        <span id = "funcParam1">根据提示输入参数一：</span><br>
             <input id="amount1" style="IME-MODE: disabled;" onkeyup="value=value.replace(/[^\-?\d.]/g,'')"   name="amount" type="text" />
-        <br><span id = "funcParam2">参数二：</span><br>
+        <br><span id = "funcParam2">根据提示输入参数二：</span><br>
             <input id="amount2" style="IME-MODE: disabled;" onkeyup="value=value.replace(/[^\-?\d.]/g,'')"   name="amount" type="text" />
-        <br><span id = "funcParam3">参数三：</span><br>
+        <br><span id = "funcParam3">根据提示输入参数三：</span><br>
             <input id="amount3" style="IME-MODE: disabled;" onkeyup="value=value.replace(/[^\-?\d.]/g,'')"   name="amount" type="text" />
-        <br><span id = "funcParam4">参数四：</span><br>
+        <br><span id = "funcParam4">根据提示输入参数四：</span><br>
             <input id="amount4" style="IME-MODE: disabled;" onkeyup="value=value.replace(/[^\-?\d.]/g,'')"   name="amount" type="text" />
-        <br><span id = "funcParam5">参数五：</span><br>
+        <br><span id = "funcParam5">根据提示输入参数五：</span><br>
             <input id="amount5" style="IME-MODE: disabled;" onkeyup="value=value.replace(/[^\-?\d.]/g,'')"   name="amount" type="text" />
         <br>
-        <button onclick="specialCalculat()"  type="button">计算并输出结果</button> <input type="text" id = "functionRusult" name="numScreen2" class="screen2" value="0" onfocus="this.blur();" />
+        <button onclick="specialCalculat()"  type="button">点击按钮输出结果</button> <input type="text" id = "functionRusult" name="numScreen2" class="screen2" value="0" onfocus="this.blur();" />
 
 
     </div>
